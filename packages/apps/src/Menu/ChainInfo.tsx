@@ -47,9 +47,9 @@ function ChainInfo ({ className }: Props): React.ReactElement<Props> {
           />
         )}
       </div>
-      {isEndpointsVisible && (
+      {/* {isEndpointsVisible && (
         <Endpoints onClose={toggleEndpoints} />
-      )}
+      )} */}
     </div>
   );
 }
