@@ -80,10 +80,10 @@ export default React.memo(styled(BaseOverlay)`
 
   &.isInfo {
     &:before {
-      background: rgba(255, 196, 12, 0.05);
+      background: rgba(65, 159, 217, 0.05);
     }
 
-    border-color: rgba(255, 196, 12, 1);
+    border-color: rgba(65, 159, 217, 1);
   }
 
   .content {
