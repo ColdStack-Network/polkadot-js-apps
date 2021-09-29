@@ -419,7 +419,7 @@ function Account ({ account: { address, meta }, className = '', delegation, filt
                   className='devBadge'
                   color='highlight'
                   hover={t<string>('This is a development account derived from the known development seed. Do not use for any funds on a non-development network.')}
-                  icon='wrench'
+                  icon='cog'
                 />
               )
               : (
