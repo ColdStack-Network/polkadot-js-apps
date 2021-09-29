@@ -40,12 +40,12 @@ function ChainInfo ({ className }: Props): React.ReactElement<Props> {
             label='#'
           />
         </div>
-        {canToggle && (
+        {/* {canToggle && (
           <Icon
             className='dropdown'
             icon={isEndpointsVisible ? 'caret-right' : 'caret-down'}
           />
-        )}
+        )} */}
       </div>
       {/* {isEndpointsVisible && (
         <Endpoints onClose={toggleEndpoints} />

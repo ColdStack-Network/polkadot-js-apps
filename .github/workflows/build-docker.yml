@@ -1,4 +1,4 @@
-name: Master
+name: Build and Public Docker
 on:
   push:
     branches:
