@@ -417,14 +417,14 @@ function Account ({ account: { address, meta }, className = '', delegation, filt
               ? (
                 <Badge
                   className='devBadge'
-                  color='orange'
+                  color='highlight'
                   hover={t<string>('This is a development account derived from the known development seed. Do not use for any funds on a non-development network.')}
                   icon='wrench'
                 />
               )
               : (
                 <Badge
-                  color='orange'
+                  color='highlight'
                   hover={
                     <div>
                       <p>{t<string>('This account is available on all networks. It is recommended to link to a specific network via the account options ("only this network" option) to limit availability. For accounts from an extension, set the network on the extension.')}</p>
