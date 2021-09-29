@@ -55,10 +55,12 @@ function Query ({ className = '', value: propsValue }: Props): React.ReactElemen
         placeholder={t<string>('block hash or number to query')}
         withLabel={false}
       >
-        <Button
-          icon='search'
-          onClick={_onQuery}
-        />
+        <div onClick={_onQuery} className={'searchButton'}>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="11" cy="11" r="7" stroke="rgba(34, 36, 38, 0.15)" strokeWidth="2"/>
+            <path d="M20 20L17 17" stroke="rgba(34, 36, 38, 0.15)" strokeWidth="2" strokeLinecap="round"/>
+          </svg>
+        </div>
       </Input>
     </FilterOverlay>
   );
@@ -67,5 +69,13 @@ function Query ({ className = '', value: propsValue }: Props): React.ReactElemen
 export default React.memo(styled(Query)`
   .explorer--query {
     width: 20em;
+  }
+  .searchButton{
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+  }
+  .searchButton:hover{
+    cursor: pointer
   }
 `);
