@@ -37,7 +37,7 @@ function createExternals (t: TFunction): ItemRoute[] {
       href: 'https://docs.coldstack.io',
       icon: 'book',
       name: 'wiki',
-      text: t<string>('nav.wiki', 'Wiki', { ns: 'apps-routing' })
+      text: t<string>('nav.wiki', 'GitBook', { ns: 'apps-routing' })
     }
   ];
 }
