@@ -31,7 +31,7 @@ function getApiUrl (): string {
     const url = decodeURIComponent(urlOptions.rpc.split('#')[0]);
 
     assert(url.startsWith('ws://') || url.startsWith('wss://') || url.startsWith('light://'), 'Non-prefixed ws/wss/light url');
-
+    url.replace('wss://wss://','wss://')
     return url;
   }
 
