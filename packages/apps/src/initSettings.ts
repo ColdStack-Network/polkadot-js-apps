@@ -28,7 +28,7 @@ function getApiUrl (): string {
     assert(!Array.isArray(urlOptions.rpc), 'Invalid WS endpoint specified');
 
     // https://polkadot.js.org/apps/?rpc=ws://127.0.0.1:9944#/explorer;
-    const url = decodeURIComponent(urlOptions.rpc.split('#')[0]).replace('wss://wss://','wss://');
+    const url = decodeURIComponent(urlOptions.rpc.split('#')[0]).replace('wss://wss//','wss://');
     console.log("urlOptions", urlOptions);
     assert(url.startsWith('ws://') || url.startsWith('wss://') || url.startsWith('light://'), 'Non-prefixed ws/wss/light url');
     console.log("url", url);
